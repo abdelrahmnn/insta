@@ -32,6 +32,24 @@ class _mobileSerrenState extends State<mobileSerren> {
               color: secondaryColor,
             ),
             label: "home"),
+        BottomNavigationBarItem(
+            icon: Icon(
+              Icons.add_circle,
+              color: secondaryColor,
+            ),
+            label: "home"),
+        BottomNavigationBarItem(
+            icon: Icon(
+              Icons.favorite,
+              color: secondaryColor,
+            ),
+            label: "home"),
+        BottomNavigationBarItem(
+            icon: Icon(
+              Icons.person,
+              color: secondaryColor,
+            ),
+            label: "home"),
       ]),
     );
   }
