@@ -20,8 +20,18 @@ class _mobileSerrenState extends State<mobileSerren> {
       ),
       bottomNavigationBar:
           CupertinoTabBar(backgroundColor: mobileBackgroundColor, items: [
-        BottomNavigationBarItem(icon: Icon(Icons.home), label: "home"),
-        BottomNavigationBarItem(icon: Icon(Icons.search), label: "home"),
+        BottomNavigationBarItem(
+            icon: Icon(
+              Icons.home,
+              color: primaryColor,
+            ),
+            label: "home"),
+        BottomNavigationBarItem(
+            icon: Icon(
+              Icons.search,
+              color: primaryColor,
+            ),
+            label: "home"),
       ]),
     );
   }
