@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:instagram/home.dart';
 import 'package:instagram/responive/mobile.dart';
+import 'package:instagram/responive/responive.dart';
 import 'package:instagram/responive/web.dart';
 
 void main() {
@@ -13,7 +14,10 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const MaterialApp(
-      home: webSerren(),
+      home: responive(
+        mymobileSerren: mobileSerren(),
+        mywebSerren: webSerren(),
+      ),
     );
   }
 }
