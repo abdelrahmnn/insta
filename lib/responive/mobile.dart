@@ -19,7 +19,7 @@ class _mobileSerrenState extends State<mobileSerren> {
       ),
       bottomNavigationBar: CupertinoTabBar(items: [
         BottomNavigationBarItem(icon: Icon(Icons.home), label: "home"),
-        BottomNavigationBarItem(icon: Icon(Icons.home), label: "home"),
+        BottomNavigationBarItem(icon: Icon(Icons.search), label: "home"),
       ]),
     );
   }
