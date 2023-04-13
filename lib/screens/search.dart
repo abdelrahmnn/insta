@@ -2,16 +2,19 @@ import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter/src/widgets/placeholder.dart';
 
-class Home extends StatelessWidget {
-  const Home({super.key});
+class search extends StatefulWidget {
+  const search({super.key});
 
+  @override
+  State<search> createState() => _searchState();
+}
+
+class _searchState extends State<search> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: MediaQuery.of(context).size.width > 600
-            ? Text("web screen")
-            : Text("mobil screen"),
+        title: Text("home screen"),
       ),
     );
   }

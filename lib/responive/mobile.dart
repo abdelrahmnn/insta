@@ -18,39 +18,41 @@ class _mobileSerrenState extends State<mobileSerren> {
       appBar: AppBar(
         title: Text("mobile Serren"),
       ),
-      bottomNavigationBar:
-          CupertinoTabBar(backgroundColor: mobileBackgroundColor, items: [
-        BottomNavigationBarItem(
-            icon: Icon(
-              Icons.home,
-              color: primaryColor,
-            ),
-            label: "home"),
-        BottomNavigationBarItem(
-            icon: Icon(
-              Icons.search,
-              color: secondaryColor,
-            ),
-            label: "home"),
-        BottomNavigationBarItem(
-            icon: Icon(
-              Icons.add_circle,
-              color: secondaryColor,
-            ),
-            label: "home"),
-        BottomNavigationBarItem(
-            icon: Icon(
-              Icons.favorite,
-              color: secondaryColor,
-            ),
-            label: "home"),
-        BottomNavigationBarItem(
-            icon: Icon(
-              Icons.person,
-              color: secondaryColor,
-            ),
-            label: "home"),
-      ]),
+      bottomNavigationBar: CupertinoTabBar(
+          backgroundColor: mobileBackgroundColor,
+          onTap: (index) {},
+          items: [
+            BottomNavigationBarItem(
+                icon: Icon(
+                  Icons.home,
+                  color: primaryColor,
+                ),
+                label: "home"),
+            BottomNavigationBarItem(
+                icon: Icon(
+                  Icons.search,
+                  color: secondaryColor,
+                ),
+                label: "home"),
+            BottomNavigationBarItem(
+                icon: Icon(
+                  Icons.add_circle,
+                  color: secondaryColor,
+                ),
+                label: "home"),
+            BottomNavigationBarItem(
+                icon: Icon(
+                  Icons.favorite,
+                  color: secondaryColor,
+                ),
+                label: "home"),
+            BottomNavigationBarItem(
+                icon: Icon(
+                  Icons.person,
+                  color: secondaryColor,
+                ),
+                label: "home"),
+          ]),
     );
   }
 }

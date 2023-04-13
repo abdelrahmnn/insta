@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:instagram/home.dart';
+
 import 'package:instagram/responive/mobile.dart';
 import 'package:instagram/responive/responive.dart';
 import 'package:instagram/responive/web.dart';
