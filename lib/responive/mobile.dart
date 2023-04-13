@@ -16,6 +16,10 @@ class _mobileSerrenState extends State<mobileSerren> {
       appBar: AppBar(
         title: Text("mobile Serren"),
       ),
+      bottomNavigationBar: BottomNavigationBar(items: [
+        BottomNavigationBarItem(icon: Icon(Icons.home), label: "hom e"),
+        BottomNavigationBarItem(icon: Icon(Icons.home), label: "home"),
+      ]),
     );
   }
 }
