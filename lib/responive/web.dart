@@ -14,7 +14,7 @@ class _webSerrenState extends State<webSerren> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("web Serren"),
+        title: Text("web Serren2"),
       ),
     );
   }
