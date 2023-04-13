@@ -29,7 +29,7 @@ class _mobileSerrenState extends State<mobileSerren> {
         BottomNavigationBarItem(
             icon: Icon(
               Icons.search,
-              color: primaryColor,
+              color: secondaryColor,
             ),
             label: "home"),
       ]),
