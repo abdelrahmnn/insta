@@ -23,9 +23,6 @@ class _mobileSerrenState extends State<mobileSerren> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        appBar: AppBar(
-          title: Text("mobile Serren"),
-        ),
         bottomNavigationBar: CupertinoTabBar(
             backgroundColor: mobileBackgroundColor,
             onTap: (index) {
@@ -72,7 +69,7 @@ class _mobileSerrenState extends State<mobileSerren> {
             home(),
             search(),
             profile(),
-            Center(child: Text("chid")),
+            //   Center(child: Text("profile")),
             add_post(),
           ],
         ));
