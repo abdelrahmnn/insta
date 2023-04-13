@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter/src/widgets/placeholder.dart';
@@ -16,8 +17,8 @@ class _mobileSerrenState extends State<mobileSerren> {
       appBar: AppBar(
         title: Text("mobile Serren"),
       ),
-      bottomNavigationBar: BottomNavigationBar(items: [
-        BottomNavigationBarItem(icon: Icon(Icons.home), label: "hom e"),
+      bottomNavigationBar: CupertinoTabBar(items: [
+        BottomNavigationBarItem(icon: Icon(Icons.home), label: "home"),
         BottomNavigationBarItem(icon: Icon(Icons.home), label: "home"),
       ]),
     );
