@@ -16,7 +16,9 @@ class _homeState extends State<home> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: mobileBackgroundColor,
       appBar: AppBar(
+        backgroundColor: mobileBackgroundColor,
         title: SvgPicture.asset(
           "assets/img/instagram.svg",
           color: primaryColor,
