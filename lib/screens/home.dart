@@ -1,6 +1,9 @@
+import 'dart:ui';
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter/src/widgets/placeholder.dart';
+import 'package:flutter_svg/flutter_svg.dart';
+import 'package:instagram/shared/colors.dart';
 
 class home extends StatefulWidget {
   const home({super.key});
@@ -14,7 +17,10 @@ class _homeState extends State<home> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("home screen"),
+        title: SvgPicture.asset(
+          "assets/img/instagram.svg",
+          color: primaryColor,
+        ),
       ),
     );
   }
