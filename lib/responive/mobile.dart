@@ -19,7 +19,7 @@ class mobileSerren extends StatefulWidget {
 
 class _mobileSerrenState extends State<mobileSerren> {
   final PageController _pageController = PageController();
-
+  int currentpage = 0;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -28,38 +28,41 @@ class _mobileSerrenState extends State<mobileSerren> {
             onTap: (index) {
               // navigate to the tabed page
               _pageController.jumpToPage(index);
+              setState(() {
+                currentpage = index;
+              });
             },
             items: [
               BottomNavigationBarItem(
                   icon: Icon(
                     Icons.home,
-                    color: primaryColor,
+                    color: currentpage == 0 ? primaryColor : secondaryColor,
                   ),
-                  label: "home"),
+                  label: ""),
               BottomNavigationBarItem(
                   icon: Icon(
                     Icons.search,
-                    color: secondaryColor,
+                    color: currentpage == 1 ? primaryColor : secondaryColor,
                   ),
-                  label: "home"),
+                  label: ""),
               BottomNavigationBarItem(
                   icon: Icon(
                     Icons.add_circle,
-                    color: secondaryColor,
+                    color: currentpage == 2 ? primaryColor : secondaryColor,
                   ),
-                  label: "home"),
+                  label: ""),
               BottomNavigationBarItem(
                   icon: Icon(
                     Icons.favorite,
-                    color: secondaryColor,
+                    color: currentpage == 3 ? primaryColor : secondaryColor,
                   ),
-                  label: "home"),
+                  label: ""),
               BottomNavigationBarItem(
                   icon: Icon(
                     Icons.person,
-                    color: secondaryColor,
+                    color: currentpage == 4 ? primaryColor : secondaryColor,
                   ),
-                  label: "home"),
+                  label: ""),
             ]),
         body: PageView(
           //      onPageChanged: (index) {},
