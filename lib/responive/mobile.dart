@@ -9,6 +9,7 @@ import 'package:instagram/screens/home.dart';
 import 'package:instagram/screens/profile.dart';
 import 'package:instagram/screens/search.dart';
 import 'package:instagram/shared/colors.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 
 class mobileSerren extends StatefulWidget {
   const mobileSerren({super.key});
