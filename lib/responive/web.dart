@@ -38,6 +38,9 @@ class _webSerrenState extends State<webSerren> {
             ),
             onPressed: () {
               Navigat2Screen(0);
+              setState(() {
+                page = 0;
+              });
             },
           ),
           IconButton(
@@ -47,6 +50,9 @@ class _webSerrenState extends State<webSerren> {
             ),
             onPressed: () {
               Navigat2Screen(1);
+              setState(() {
+                page = 1;
+              });
             },
           ),
           IconButton(
@@ -56,6 +62,9 @@ class _webSerrenState extends State<webSerren> {
             ),
             onPressed: () {
               Navigat2Screen(2);
+              setState(() {
+                page = 2;
+              });
             },
           ),
           IconButton(
@@ -94,7 +103,9 @@ class _webSerrenState extends State<webSerren> {
           search(),
           profile(),
           Center(child: Text("profile")),
-          add_post(),
+          add_post(
+            child: Text("data"),
+          ),
         ],
       ),
     );
