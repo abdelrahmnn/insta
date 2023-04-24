@@ -23,6 +23,13 @@ class _webSerrenState extends State<webSerren> {
             ),
             onPressed: () {},
           ),
+          IconButton(
+            icon: Icon(
+              Icons.search,
+              color: secondaryColor,
+            ),
+            onPressed: () {},
+          ),
         ],
       ),
     );
