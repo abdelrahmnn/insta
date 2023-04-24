@@ -83,6 +83,27 @@ class _add_postState extends State<add_post> {
                   )
                 ],
               ),
+              Column(
+                children: [
+                  Text(
+                    "15",
+                    style: TextStyle(
+                      fontSize: 22,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                  SizedBox(
+                    height: 5,
+                  ),
+                  Text(
+                    "Following",
+                    style: TextStyle(
+                        fontSize: 15,
+                        fontWeight: FontWeight.bold,
+                        color: Colors.grey),
+                  )
+                ],
+              )
             ],
           )
         ],
