@@ -47,7 +47,8 @@ class _homeState extends State<home> {
         decoration: BoxDecoration(
             color: mobileBackgroundColor,
             borderRadius: BorderRadius.circular(12)),
-        margin: EdgeInsets.symmetric(vertical: 55, horizontal: 100),
+        margin: EdgeInsets.symmetric(
+            vertical: 11, horizontal: widthScreen > 600 ? widthScreen / 4 : 0),
         child: Column(children: [
           Padding(
             padding: const EdgeInsets.symmetric(vertical: 16, horizontal: 13),
