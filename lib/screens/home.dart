@@ -37,33 +37,42 @@ class _homeState extends State<home> {
           height: 32,
         ),
       ),
-      body: Column(children: [
-        Row(
-          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-          children: [
-            Padding(
-              padding: const EdgeInsets.symmetric(vertical: 16, horizontal: 13),
-              child: Row(
-                children: [
-                  CircleAvatar(
-                    radius: 26,
-                    backgroundImage: NetworkImage(
-                        "https://scontent.fcai21-4.fna.fbcdn.net/v/t39.30808-6/248379584_3759270507631363_3366834168759626723_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=09cbfe&_nc_eui2=AeE5ci7MNra4sLn0KSchARj8Q4bWcuEvP4hDhtZy4S8_iHXKc4R0JBSp0rIxEQp9VhgeWPRSy4Ustgy_hiyPEU8I&_nc_ohc=n5gOpNI7GZsAX_7L_cT&_nc_ht=scontent.fcai21-4.fna&oh=00_AfCywPN8Kn2KRmSkRF-dJ479Uo51A6sbJjjVoEu9YBSWUg&oe=644A50EF"),
-                  ),
-                  SizedBox(
-                    width: 17,
-                  ),
-                  Text(
-                    "abd0",
-                    style: TextStyle(fontSize: 15),
-                  ),
-                ],
+      body: Column(
+        children: [
+          Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            children: [
+              Padding(
+                padding:
+                    const EdgeInsets.symmetric(vertical: 16, horizontal: 13),
+                child: Row(
+                  children: [
+                    CircleAvatar(
+                      radius: 26,
+                      backgroundImage: NetworkImage(
+                          "https://scontent.fcai21-4.fna.fbcdn.net/v/t39.30808-6/248379584_3759270507631363_3366834168759626723_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=09cbfe&_nc_eui2=AeE5ci7MNra4sLn0KSchARj8Q4bWcuEvP4hDhtZy4S8_iHXKc4R0JBSp0rIxEQp9VhgeWPRSy4Ustgy_hiyPEU8I&_nc_ohc=n5gOpNI7GZsAX_7L_cT&_nc_ht=scontent.fcai21-4.fna&oh=00_AfCywPN8Kn2KRmSkRF-dJ479Uo51A6sbJjjVoEu9YBSWUg&oe=644A50EF"),
+                    ),
+                    SizedBox(
+                      width: 17,
+                    ),
+                    Text(
+                      "abd0",
+                      style: TextStyle(fontSize: 15),
+                    ),
+                  ],
+                ),
               ),
-            ),
-            IconButton(onPressed: () {}, icon: Icon(Icons.more_vert)),
-          ],
-        )
-      ]),
+              IconButton(onPressed: () {}, icon: Icon(Icons.more_horiz)),
+              Image.network(
+                "https://images.unsplash.com/photo-1680177377908-8fbdfe2947dc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+                fit: BoxFit.cover,
+                height: MediaQuery.of(context).size.height * 0.35,
+                width: double.infinity,
+              )
+            ],
+          )
+        ],
+      ),
     );
   }
 }
