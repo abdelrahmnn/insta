@@ -2,6 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter/src/widgets/placeholder.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:instagram/screens/add_post.dart';
+import 'package:instagram/screens/home.dart';
+import 'package:instagram/screens/profile.dart';
+import 'package:instagram/screens/search.dart';
 import 'package:instagram/shared/colors.dart';
 
 class webSerren extends StatefulWidget {
@@ -59,6 +63,18 @@ class _webSerrenState extends State<webSerren> {
           color: primaryColor,
           height: 32,
         ),
+      ),
+      body: PageView(
+        //      onPageChanged: (index) {},
+        physics: NeverScrollableScrollPhysics(),
+        // controller: _pageController,
+        children: [
+          home(),
+          search(),
+          profile(),
+          Center(child: Text("profile")),
+          add_post(),
+        ],
       ),
     );
   }

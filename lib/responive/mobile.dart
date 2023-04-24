@@ -73,7 +73,7 @@ class _mobileSerrenState extends State<mobileSerren> {
           home(),
           search(),
           profile(),
-          //   Center(child: Text("profile")),
+          Center(child: Text("profile")),
           add_post(),
         ],
       ),
