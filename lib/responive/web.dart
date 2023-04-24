@@ -16,6 +16,8 @@ class webSerren extends StatefulWidget {
 }
 
 class _webSerrenState extends State<webSerren> {
+  final PageController _pageController = PageController();
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -33,28 +35,36 @@ class _webSerrenState extends State<webSerren> {
               Icons.search,
               color: secondaryColor,
             ),
-            onPressed: () {},
+            onPressed: () {
+              _pageController.jumpToPage(1);
+            },
           ),
           IconButton(
             icon: Icon(
               Icons.add_a_photo,
               color: secondaryColor,
             ),
-            onPressed: () {},
+            onPressed: () {
+              _pageController.jumpToPage(2);
+            },
           ),
           IconButton(
             icon: Icon(
               Icons.favorite,
               color: secondaryColor,
             ),
-            onPressed: () {},
+            onPressed: () {
+              _pageController.jumpToPage(3);
+            },
           ),
           IconButton(
             icon: Icon(
               Icons.person,
               color: secondaryColor,
             ),
-            onPressed: () {},
+            onPressed: () {
+              _pageController.jumpToPage(3);
+            },
           ),
         ],
         backgroundColor: mobileBackgroundColor,
@@ -65,6 +75,7 @@ class _webSerrenState extends State<webSerren> {
         ),
       ),
       body: PageView(
+        controller: _pageController,
         onPageChanged: (index) {},
         physics: NeverScrollableScrollPhysics(),
         // controller: _pageController,
