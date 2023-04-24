@@ -38,13 +38,13 @@ class _webSerrenState extends State<webSerren> {
             ),
             onPressed: () {},
           ),
-          //   IconButton(
-          //     icon: Icon(
-          //       Icons.favorite,
-          //       color: secondaryColor,
-          //     ),
-          //     onPressed: () {},
-          //   ),
+          IconButton(
+            icon: Icon(
+              Icons.favorite,
+              color: secondaryColor,
+            ),
+            onPressed: () {},
+          ),
           //   IconButton(
           //     icon: Icon(
           //       Icons.person,
