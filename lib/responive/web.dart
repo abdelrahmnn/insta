@@ -45,13 +45,13 @@ class _webSerrenState extends State<webSerren> {
             ),
             onPressed: () {},
           ),
-          //   IconButton(
-          //     icon: Icon(
-          //       Icons.person,
-          //       color: secondaryColor,
-          //     ),
-          //     onPressed: () {},
-          //   ),
+          IconButton(
+            icon: Icon(
+              Icons.person,
+              color: secondaryColor,
+            ),
+            onPressed: () {},
+          ),
         ],
         backgroundColor: mobileBackgroundColor,
         title: SvgPicture.asset(
