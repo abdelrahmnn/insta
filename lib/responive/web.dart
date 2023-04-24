@@ -17,8 +17,13 @@ class webSerren extends StatefulWidget {
 
 class _webSerrenState extends State<webSerren> {
   final PageController _pageController = PageController();
+  int page = 0;
+
   Navigat2Screen(int indexx) {
     _pageController.jumpToPage(indexx);
+    setState(() {
+      page = indexx;
+    });
   }
 
   @override
@@ -29,7 +34,7 @@ class _webSerrenState extends State<webSerren> {
           IconButton(
             icon: Icon(
               Icons.home,
-              color: primaryColor,
+              color: page == 0 ? primaryColor : secondaryColor,
             ),
             onPressed: () {
               Navigat2Screen(0);
@@ -38,7 +43,7 @@ class _webSerrenState extends State<webSerren> {
           IconButton(
             icon: Icon(
               Icons.search,
-              color: secondaryColor,
+              color: page == 1 ? primaryColor : secondaryColor,
             ),
             onPressed: () {
               Navigat2Screen(1);
@@ -47,7 +52,7 @@ class _webSerrenState extends State<webSerren> {
           IconButton(
             icon: Icon(
               Icons.add_a_photo,
-              color: secondaryColor,
+              color: page == 2 ? primaryColor : secondaryColor,
             ),
             onPressed: () {
               Navigat2Screen(2);
@@ -56,7 +61,7 @@ class _webSerrenState extends State<webSerren> {
           IconButton(
             icon: Icon(
               Icons.favorite,
-              color: secondaryColor,
+              color: page == 3 ? primaryColor : secondaryColor,
             ),
             onPressed: () {
               Navigat2Screen(3);
@@ -65,7 +70,7 @@ class _webSerrenState extends State<webSerren> {
           IconButton(
             icon: Icon(
               Icons.person,
-              color: secondaryColor,
+              color: page == 4 ? primaryColor : secondaryColor,
             ),
             onPressed: () {
               Navigat2Screen(4);
