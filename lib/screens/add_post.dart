@@ -19,7 +19,18 @@ class _add_postState extends State<add_post> {
       backgroundColor: mobileBackgroundColor,
       appBar: AppBar(
         backgroundColor: mobileBackgroundColor,
-        title: Text("Abdelrhman"),
+        title: Row(
+          mainAxisAlignment: MainAxisAlignment.start,
+          children: [
+            Container(
+                padding: const EdgeInsets.all(8.0), child: Text('Abdelrhman')),
+            Image.asset(
+              'assets/img/tt.png',
+              fit: BoxFit.contain,
+              height: 35,
+            ),
+          ],
+        ),
       ),
       body: Column(
         children: [
@@ -69,7 +80,7 @@ class _add_postState extends State<add_post> {
                     Column(
                       children: [
                         Text(
-                          "8",
+                          "1.5M",
                           style: TextStyle(
                             fontSize: 22,
                             fontWeight: FontWeight.bold,
