@@ -48,6 +48,13 @@ class _add_postState extends State<add_post> {
                   SizedBox(
                     height: 5,
                   ),
+                  Text(
+                    "posts",
+                    style: TextStyle(
+                        fontSize: 15,
+                        fontWeight: FontWeight.bold,
+                        color: Colors.grey),
+                  )
                 ],
               )
             ],
