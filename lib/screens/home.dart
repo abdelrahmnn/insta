@@ -75,7 +75,92 @@ class _homeState extends State<home> {
           height: MediaQuery.of(context).size.height * 0.35,
           width: double.infinity,
         ),
-        Row()
+        Padding(
+          padding: const EdgeInsets.symmetric(vertical: 11),
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            children: [
+              Row(
+                children: [
+                  IconButton(
+                    onPressed: () {},
+                    icon: Icon(Icons.favorite_border),
+                  ),
+                  IconButton(
+                    onPressed: () {},
+                    icon: Icon(
+                      Icons.comment_outlined,
+                    ),
+                  ),
+                  IconButton(
+                    onPressed: () {},
+                    icon: Icon(
+                      Icons.send,
+                    ),
+                  ),
+                ],
+              ),
+              IconButton(
+                onPressed: () {},
+                icon: Icon(
+                  Icons.bookmark_outline,
+                ),
+              ),
+            ],
+          ),
+        ),
+        Container(
+          margin: EdgeInsets.fromLTRB(10, 0, 0, 10),
+          width: double.infinity,
+          child: Text(
+            "10 likes",
+            textAlign: TextAlign.start,
+            style:
+                TextStyle(fontSize: 18, color: Color.fromARGB(255, 78, 81, 94)),
+          ),
+        ),
+        Row(
+          children: [
+            SizedBox(
+              width: 9,
+            ),
+            Text(
+              "Abdelrhman",
+              textAlign: TextAlign.start,
+              style: TextStyle(
+                  fontSize: 20, color: Color.fromARGB(255, 189, 196, 199)),
+            ),
+            Text(
+              "  Hello ;-)",
+              textAlign: TextAlign.start,
+              style: TextStyle(
+                  fontSize: 15, color: Color.fromARGB(255, 189, 196, 199)),
+            ),
+          ],
+        ),
+        GestureDetector(
+          onTap: () {},
+          child: Container(
+            margin: EdgeInsets.fromLTRB(10, 9, 9, 10),
+            width: double.infinity,
+            child: Text(
+              "100 cooments",
+              style: TextStyle(
+                  fontSize: 16, color: Color.fromARGB(255, 78, 81, 94)),
+              textAlign: TextAlign.start,
+            ),
+          ),
+        ),
+        Container(
+          margin: EdgeInsets.fromLTRB(10, 0, 0, 10),
+          width: double.infinity,
+          child: Text(
+            "10 june 2022",
+            style:
+                TextStyle(fontSize: 15, color: Color.fromARGB(255, 78, 81, 94)),
+            textAlign: TextAlign.start,
+          ),
+        ),
       ]),
     );
   }
