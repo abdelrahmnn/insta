@@ -44,7 +44,10 @@ class _add_postState extends State<add_post> {
                       fontSize: 22,
                       fontWeight: FontWeight.bold,
                     ),
-                  )
+                  ),
+                  SizedBox(
+                    height: 5,
+                  ),
                 ],
               )
             ],
