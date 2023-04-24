@@ -24,58 +24,59 @@ class _mobileSerrenState extends State<mobileSerren> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        bottomNavigationBar: CupertinoTabBar(
-            backgroundColor: mobileBackgroundColor,
-            onTap: (index) {
-              // navigate to the tabed page
-              _pageController.jumpToPage(index);
-              setState(() {
-                currentpage = index;
-              });
-            },
-            items: [
-              BottomNavigationBarItem(
-                  icon: Icon(
-                    Icons.home,
-                    color: currentpage == 0 ? primaryColor : secondaryColor,
-                  ),
-                  label: ""),
-              BottomNavigationBarItem(
-                  icon: Icon(
-                    Icons.search,
-                    color: currentpage == 1 ? primaryColor : secondaryColor,
-                  ),
-                  label: ""),
-              BottomNavigationBarItem(
-                  icon: Icon(
-                    Icons.add_circle,
-                    color: currentpage == 2 ? primaryColor : secondaryColor,
-                  ),
-                  label: ""),
-              BottomNavigationBarItem(
-                  icon: Icon(
-                    Icons.favorite,
-                    color: currentpage == 3 ? primaryColor : secondaryColor,
-                  ),
-                  label: ""),
-              BottomNavigationBarItem(
-                  icon: Icon(
-                    Icons.person,
-                    color: currentpage == 4 ? primaryColor : secondaryColor,
-                  ),
-                  label: ""),
-            ]),
-        body: PageView(
-          //      onPageChanged: (index) {},
-          physics: NeverScrollableScrollPhysics(),
-          controller: _pageController,
-          children: [
-            home(),
-            search(),
-            profile(),
-            //   Center(child: Text("profile")),
-            add_post(),
-          ],
-        ));
+      bottomNavigationBar: CupertinoTabBar(
+          backgroundColor: mobileBackgroundColor,
+          onTap: (index) {
+            // navigate to the tabed page
+            _pageController.jumpToPage(index);
+            setState(() {
+              currentpage = index;
+            });
+          },
+          items: [
+            BottomNavigationBarItem(
+                icon: Icon(
+                  Icons.home,
+                  color: currentpage == 0 ? primaryColor : secondaryColor,
+                ),
+                label: ""),
+            BottomNavigationBarItem(
+                icon: Icon(
+                  Icons.search,
+                  color: currentpage == 1 ? primaryColor : secondaryColor,
+                ),
+                label: ""),
+            BottomNavigationBarItem(
+                icon: Icon(
+                  Icons.add_circle,
+                  color: currentpage == 2 ? primaryColor : secondaryColor,
+                ),
+                label: ""),
+            BottomNavigationBarItem(
+                icon: Icon(
+                  Icons.favorite,
+                  color: currentpage == 3 ? primaryColor : secondaryColor,
+                ),
+                label: ""),
+            BottomNavigationBarItem(
+                icon: Icon(
+                  Icons.person,
+                  color: currentpage == 4 ? primaryColor : secondaryColor,
+                ),
+                label: ""),
+          ]),
+      body: PageView(
+        //      onPageChanged: (index) {},
+        physics: NeverScrollableScrollPhysics(),
+        controller: _pageController,
+        children: [
+          home(),
+          search(),
+          profile(),
+          //   Center(child: Text("profile")),
+          add_post(),
+        ],
+      ),
+    );
   }
 }
