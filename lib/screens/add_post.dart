@@ -36,6 +36,17 @@ class _add_postState extends State<add_post> {
                       "https://scontent.fcai21-4.fna.fbcdn.net/v/t39.30808-6/248379584_3759270507631363_3366834168759626723_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=09cbfe&_nc_eui2=AeE5ci7MNra4sLn0KSchARj8Q4bWcuEvP4hDhtZy4S8_iHXKc4R0JBSp0rIxEQp9VhgeWPRSy4Ustgy_hiyPEU8I&_nc_ohc=n5gOpNI7GZsAX_7L_cT&_nc_ht=scontent.fcai21-4.fna&oh=00_AfCywPN8Kn2KRmSkRF-dJ479Uo51A6sbJjjVoEu9YBSWUg&oe=644A50EF"),
                 ),
               ),
+              Column(
+                children: [
+                  Text(
+                    "1",
+                    style: TextStyle(
+                      fontSize: 22,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  )
+                ],
+              )
             ],
           )
         ],
