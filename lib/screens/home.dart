@@ -17,28 +17,31 @@ class home extends StatefulWidget {
 class _homeState extends State<home> {
   @override
   Widget build(BuildContext context) {
+    final double widthScreen = MediaQuery.of(context).size.width;
     return Scaffold(
       backgroundColor: mobileBackgroundColor,
-      appBar: AppBar(
-        actions: [
-          IconButton(
-              onPressed: () {},
-              icon: Icon(
-                Icons.messenger_outline,
-              )),
-          IconButton(
-              onPressed: () {},
-              icon: Icon(
-                Icons.logout,
-              ))
-        ],
-        backgroundColor: mobileBackgroundColor,
-        title: SvgPicture.asset(
-          "assets/img/instagram.svg",
-          color: primaryColor,
-          height: 32,
-        ),
-      ),
+      appBar: widthScreen > 600
+          ? null
+          : AppBar(
+              actions: [
+                IconButton(
+                    onPressed: () {},
+                    icon: Icon(
+                      Icons.messenger_outline,
+                    )),
+                IconButton(
+                    onPressed: () {},
+                    icon: Icon(
+                      Icons.logout,
+                    ))
+              ],
+              backgroundColor: mobileBackgroundColor,
+              title: SvgPicture.asset(
+                "assets/img/instagram.svg",
+                color: primaryColor,
+                height: 32,
+              ),
+            ),
       body: Column(children: [
         Padding(
           padding: const EdgeInsets.symmetric(vertical: 16, horizontal: 13),

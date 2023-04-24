@@ -65,7 +65,7 @@ class _webSerrenState extends State<webSerren> {
         ),
       ),
       body: PageView(
-        //      onPageChanged: (index) {},
+        onPageChanged: (index) {},
         physics: NeverScrollableScrollPhysics(),
         // controller: _pageController,
         children: [
