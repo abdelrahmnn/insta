@@ -38,7 +38,7 @@ class _add_postState extends State<add_post> {
             children: [
               Container(
                 margin: EdgeInsets.only(left: 22),
-                padding: EdgeInsets.all(3),
+                padding: EdgeInsets.all(4),
                 decoration: BoxDecoration(
                   shape: BoxShape.circle,
                   color: Color.fromARGB(125, 78, 91, 110),
