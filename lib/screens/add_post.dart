@@ -24,6 +24,7 @@ class _add_postState extends State<add_post> {
           Row(
             children: [
               Container(
+                margin: EdgeInsets.only(left: 22),
                 padding: EdgeInsets.all(3),
                 decoration: BoxDecoration(
                   shape: BoxShape.circle,
