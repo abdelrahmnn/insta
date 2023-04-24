@@ -83,6 +83,9 @@ class _add_postState extends State<add_post> {
                   )
                 ],
               ),
+              SizedBox(
+                width: 17,
+              ),
               Column(
                 children: [
                   Text(
