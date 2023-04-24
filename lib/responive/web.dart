@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter/src/widgets/placeholder.dart';
+import 'package:instagram/shared/colors.dart';
 
 class webSerren extends StatefulWidget {
   const webSerren({super.key});
@@ -14,7 +15,15 @@ class _webSerrenState extends State<webSerren> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("web Serren2"),
+        actions: [
+          IconButton(
+            icon: Icon(
+              Icons.home,
+              color: primaryColor,
+            ),
+            onPressed: () {},
+          ),
+        ],
       ),
     );
   }
