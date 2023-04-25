@@ -139,7 +139,7 @@ class _add_postState extends State<add_post> {
           ),
           Divider(
             color: Colors.white,
-            thickness: 0.44,
+            thickness: widthScreen > 600 ? 0.05 : 0.44,
           ),
           SizedBox(
             height: 10,
