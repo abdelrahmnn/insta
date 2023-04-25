@@ -17,6 +17,7 @@ class add_post extends StatefulWidget {
 class _add_postState extends State<add_post> {
   @override
   Widget build(BuildContext context) {
+    final double widthScreen = MediaQuery.of(context).size.width;
     return Scaffold(
       backgroundColor: mobileBackgroundColor,
       appBar: AppBar(
