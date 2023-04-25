@@ -133,9 +133,12 @@ class _add_postState extends State<add_post> {
               margin: EdgeInsets.fromLTRB(35, 10, 0, 0),
               width: double.infinity,
               child: Text("😎 عبدالرحمن")),
+          SizedBox(
+            height: 15,
+          ),
           Divider(
             color: Colors.white,
-            thickness: 0.3,
+            thickness: 0.44,
           )
         ],
       ),
