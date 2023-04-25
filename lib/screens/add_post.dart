@@ -139,6 +139,28 @@ class _add_postState extends State<add_post> {
           Divider(
             color: Colors.white,
             thickness: 0.44,
+          ),
+          Row(
+            children: [
+              ElevatedButton.icon(
+                onPressed: () {},
+                icon: Icon(
+                  Icons.edit,
+                  color: Colors.grey,
+                  size: 24.0,
+                ),
+                label: Text(
+                  "Edit profile",
+                  style: TextStyle(fontSize: 17),
+                ),
+                style: ButtonStyle(
+                  backgroundColor: MaterialStateProperty.all(
+                      Color.fromARGB(0, 90, 103, 223)),
+                  padding: MaterialStateProperty.all(
+                      EdgeInsets.symmetric(vertical: 10, horizontal: 33)),
+                ),
+              )
+            ],
           )
         ],
       ),
