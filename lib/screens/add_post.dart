@@ -139,7 +139,7 @@ class _add_postState extends State<add_post> {
           ),
           Divider(
             color: Colors.white,
-            thickness: widthScreen > 600 ? 0.05 : 0.44,
+            thickness: widthScreen > 600 ? 0.06 : 0.44,
           ),
           SizedBox(
             height: 10,
@@ -161,8 +161,8 @@ class _add_postState extends State<add_post> {
                 style: ButtonStyle(
                     backgroundColor: MaterialStateProperty.all(
                         Color.fromARGB(0, 90, 103, 223)),
-                    padding: MaterialStateProperty.all(
-                        EdgeInsets.symmetric(vertical: 10, horizontal: 33)),
+                    padding: MaterialStateProperty.all(EdgeInsets.symmetric(
+                        vertical: widthScreen > 600 ? 19 : 10, horizontal: 33)),
                     shape: MaterialStateProperty.all(RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(7),
                       side: BorderSide(
@@ -186,8 +186,8 @@ class _add_postState extends State<add_post> {
                 style: ButtonStyle(
                     backgroundColor: MaterialStateProperty.all(
                         Color.fromARGB(202, 255, 10, 10)),
-                    padding: MaterialStateProperty.all(
-                        EdgeInsets.symmetric(vertical: 10, horizontal: 33)),
+                    padding: MaterialStateProperty.all(EdgeInsets.symmetric(
+                        vertical: widthScreen > 600 ? 19 : 10, horizontal: 33)),
                     shape: MaterialStateProperty.all(RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(7),
                     ))),
@@ -199,31 +199,34 @@ class _add_postState extends State<add_post> {
           ),
           Divider(
             color: Colors.white,
-            thickness: 0.44,
+            thickness: widthScreen > 600 ? 0.06 : 0.44,
           ),
           SizedBox(
             height: 19,
           ),
           Expanded(
-            child: GridView.builder(
-                gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-                    crossAxisCount: 2,
-                    childAspectRatio: 3 / 2,
-                    crossAxisSpacing: 10,
-                    mainAxisSpacing: 10),
-                itemCount: 3,
-                itemBuilder: (BuildContext context, int index) {
-                  return ClipRRect(
-                    borderRadius: BorderRadius.circular(4),
-                    child: Image.network(
-                      "https://cdn1-m.alittihad.ae/store/archive/image/2021/10/22/6266a092-72dd-4a2f-82a4-d22ed9d2cc59.jpg?width=1300",
-                      // height: 333,
-                      // width: 100,
+            child: Padding(
+              padding: const EdgeInsets.all(3.0),
+              child: GridView.builder(
+                  gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+                      crossAxisCount: 2,
+                      childAspectRatio: 3 / 2,
+                      crossAxisSpacing: 10,
+                      mainAxisSpacing: 10),
+                  itemCount: 3,
+                  itemBuilder: (BuildContext context, int index) {
+                    return ClipRRect(
+                      borderRadius: BorderRadius.circular(4),
+                      child: Image.network(
+                        "https://cdn1-m.alittihad.ae/store/archive/image/2021/10/22/6266a092-72dd-4a2f-82a4-d22ed9d2cc59.jpg?width=1300",
+                        // height: 333,
+                        // width: 100,
 
-                      fit: BoxFit.cover,
-                    ),
-                  );
-                }),
+                        fit: BoxFit.cover,
+                      ),
+                    );
+                  }),
+            ),
           ),
         ],
       ),
