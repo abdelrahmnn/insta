@@ -206,7 +206,9 @@ class _add_postState extends State<add_post> {
           ),
           Expanded(
             child: Padding(
-              padding: const EdgeInsets.all(3.0),
+              padding: widthScreen > 600
+                  ? const EdgeInsets.all(66.0)
+                  : const EdgeInsets.all(3.0),
               child: GridView.builder(
                   gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
                       crossAxisCount: 2,
