@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter/src/widgets/placeholder.dart';
+import 'package:instagram/shared/colors.dart';
 
 class search extends StatefulWidget {
   const search({super.key});
@@ -13,8 +14,12 @@ class _searchState extends State<search> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: mobileBackgroundColor,
       appBar: AppBar(
-        title: Text("home screen"),
+        backgroundColor: mobileBackgroundColor,
+        title: TextFormField(
+          decoration: const InputDecoration(labelText: 'Search for a user...'),
+        ),
       ),
     );
   }
