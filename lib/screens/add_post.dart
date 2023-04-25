@@ -154,11 +154,16 @@ class _add_postState extends State<add_post> {
                   style: TextStyle(fontSize: 17),
                 ),
                 style: ButtonStyle(
-                  backgroundColor: MaterialStateProperty.all(
-                      Color.fromARGB(0, 90, 103, 223)),
-                  padding: MaterialStateProperty.all(
-                      EdgeInsets.symmetric(vertical: 10, horizontal: 33)),
-                ),
+                    backgroundColor: MaterialStateProperty.all(
+                        Color.fromARGB(0, 90, 103, 223)),
+                    padding: MaterialStateProperty.all(
+                        EdgeInsets.symmetric(vertical: 10, horizontal: 33)),
+                    shape: MaterialStateProperty.all(RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(7),
+                      side: BorderSide(
+                          color: Color.fromARGB(109, 255, 255, 255),
+                          style: BorderStyle.solid),
+                    ))),
               )
             ],
           )
