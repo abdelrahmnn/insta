@@ -1,5 +1,7 @@
 // ignore_for_file: prefer_const_literals_to_create_immutables
 
+import 'dart:js_util';
+
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter/src/widgets/placeholder.dart';
@@ -126,6 +128,14 @@ class _add_postState extends State<add_post> {
                 ),
               )
             ],
+          ),
+          Container(
+              margin: EdgeInsets.fromLTRB(35, 10, 0, 0),
+              width: double.infinity,
+              child: Text("😎 عبدالرحمن")),
+          Divider(
+            color: Colors.white,
+            thickness: 0.3,
           )
         ],
       ),
