@@ -140,7 +140,11 @@ class _add_postState extends State<add_post> {
             color: Colors.white,
             thickness: 0.44,
           ),
+          SizedBox(
+            height: 10,
+          ),
           Row(
+            mainAxisAlignment: MainAxisAlignment.center,
             children: [
               ElevatedButton.icon(
                 onPressed: () {},
@@ -164,9 +168,62 @@ class _add_postState extends State<add_post> {
                           color: Color.fromARGB(109, 255, 255, 255),
                           style: BorderStyle.solid),
                     ))),
+              ),
+              SizedBox(
+                width: 15,
+              ),
+              ElevatedButton.icon(
+                onPressed: () {},
+                icon: Icon(
+                  Icons.logout,
+                  size: 24.0,
+                ),
+                label: Text(
+                  "log out",
+                  style: TextStyle(fontSize: 17),
+                ),
+                style: ButtonStyle(
+                    backgroundColor: MaterialStateProperty.all(
+                        Color.fromARGB(202, 255, 10, 10)),
+                    padding: MaterialStateProperty.all(
+                        EdgeInsets.symmetric(vertical: 10, horizontal: 33)),
+                    shape: MaterialStateProperty.all(RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(7),
+                    ))),
               )
             ],
-          )
+          ),
+          SizedBox(
+            height: 10,
+          ),
+          Divider(
+            color: Colors.white,
+            thickness: 0.44,
+          ),
+          SizedBox(
+            height: 19,
+          ),
+          Expanded(
+            child: GridView.builder(
+                gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+                    crossAxisCount: 2,
+                    childAspectRatio: 3 / 2,
+                    crossAxisSpacing: 10,
+                    mainAxisSpacing: 10),
+                itemCount: 3,
+                itemBuilder: (BuildContext context, int index) {
+                  return ClipRRect(
+                    borderRadius: BorderRadius.circular(4),
+                    child: Image.network(
+                      "https://cdn1-m.alittihad.ae/store/archive/image/2021/10/22/6266a092-72dd-4a2f-82a4-d22ed9d2cc59.jpg?width=1300",
+                      // height: 333,
+                      // width: 100,
+
+                      fit: BoxFit.cover,
+                    ),
+                  );
+                }),
+          ),
         ],
       ),
     );
